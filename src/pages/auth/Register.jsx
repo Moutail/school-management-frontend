@@ -5,6 +5,7 @@ import { Mail, Lock, User, Phone } from 'lucide-react';
 import Card, { CardContent, CardHeader, CardTitle } from '../../components/ui/card';
 import Alert from '../../components/ui/Alert';
 import Button from '../../components/ui/Button';
+import logoImage from '../../assets/images/logo.png'
 
 const Register = () => {
   const navigate = useNavigate();
@@ -136,7 +137,7 @@ const handleSubmit = async (e) => {
         <div className="text-center mb-8">
           <div className="bg-white p-3 rounded-full inline-block shadow-md mb-4">
             <img 
-              src="/api/placeholder/48/48"
+              src={logoImage}
               alt="Ecolenuage Logo"
               className="h-12 w-12"
             />

@@ -6,6 +6,7 @@ import Card, { CardContent, CardHeader, CardTitle } from '../../components/ui/ca
 import Alert from '../../components/ui/Alert';
 import Button from '../../components/ui/Button';
 import { useAuth } from '../../contexts/AuthContext';
+import logoImage from '../../assets/images/logo.png'
 
 const Login = () => {
     const navigate = useNavigate();
@@ -95,7 +96,7 @@ const Login = () => {
         <div className="text-center mb-8">
           <div className="bg-white p-3 rounded-full inline-block shadow-md mb-4">
             <img 
-              src="/api/placeholder/48/48"  // Remplacez par votre logo
+              src={logoImage}  // Remplacez par votre logo
               alt="Ecolenuage Logo"
               className="h-12 w-12"
             />
